@@ -43,3 +43,7 @@ os problemas escolhidos podem ser encontrados nos seguintes links:
 2 - https://www.beecrowd.com.br/repository/UOJ_1123_en.html
 
 3 - https://www.beecrowd.com.br/repository/UOJ_1764_en.html
+
+## Apresentação/Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/02NQAHeZgLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
