@@ -27,7 +27,7 @@ class Grafo:
     def kruskal_algo(self):
         result = []
         i, e = 0, 0
-        self.graph = sorted(self.graph, key=lambda item: item[2])
+        self.graph = sorted(self.graph, key=lambda item: item[2]) #ordena arestas pelo peso
         parent = []
         rank = []
         for node in range(self.V):
@@ -47,18 +47,18 @@ class Grafo:
 
 
 def main():
-    m, n = list(map(lambda x: int(x), input().split()))
+    m, n = list(map(lambda x: int(x), input().split())) #recebe numero de vertices e conexoes grafo
     gastoTotal = 0
     g = Grafo(m)
 
     for i in range(n):
-        x, y, distancia = list(map(lambda x: int(x), input().split()))
+        x, y, distancia = list(map(lambda x: int(x), input().split())) #recebe os vertices a serem conectados e o peso aresta
         if x == 0 and y == 0:
             break
         g.add_edge(x, y, distancia)
         gastoTotal += distancia
 
     g.kruskal_algo()
-    print(gastoTotal-g.gasto)
+    print(gastoTotal-g.gasto) #printa o total economizado
 
 main()
